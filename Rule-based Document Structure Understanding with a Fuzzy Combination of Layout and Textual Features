@@ -5,15 +5,45 @@ Authors: Stefan Klink, Thomas Kieninger
 SK: Stefan Klink, and Thomas Kieninger. "Rule-based document structure understanding with a fuzzy combination of layout and textual features." International Journal on Document Analysis and Recognition 4.1 (2001): 18-26.
 
 Few sentences:
+We can generate features based on one speciifc layout object as well as from dependencies between different layout objects. We can also
+generate features by considering domain specific logical layout objects. 
+They did their experiments on Scanned documents and used a commercial OCR system.  
 
 
 Summery:
+A document has two types of structures and these are layout and logical structure. They divided the recognition of the document structure
+into two different phases of processing: first, all common document structures like headings, footnotes, lists and tables are recognized 
+and second, all domain dependent logical elements are recognized using the appropriate rule base.
+
+The document header is recognized based on an assumption that it starts at top and grows untill it has too big gap from next line of the 
+text.
+
+They only recognized simple flat lists. They didn't consider recursive lists. They recognized enumerated, bulleted and dashed lists. 
+
+They used T-Recs system [2] to recognize tables. 
+
+They have rules for logical labeling. A rule unit is divided into two parts which themselves define self-related [morphological features]
+and a list of cross-related attributes [he geometrical, the textual and the label part] to express relations between the actually
+inspected block and several other blocks.
+
+Their experiments are on business letters (1~2 pages, very well structured), University of Washington Journal corpus (Regular research 
+papers, usally 5~10 pages). For the U0wash journal dataset, they had lot of difficulties such as block overleap. They only consider
+footnote, abstract, text-body and biography. Their precision reaches just 36%. 
 
 
 Knowledge from this paper:
+We can consider the position of each block. For example, a list item will be under the list header. Table content shloud be under the 
+table header. We can find out more relations from the layout. 
+
+
+
 
 
 Connected papers: 
-1. 
+1. Tsujimoto, Shuichi, and Haruo Asada. "Understanding multi-articled documents." Pattern Recognition, 1990. Proceedings., 
+   10th International Conference on. Vol. 1. IEEE, 1990.
+2. T. Kieninger: "Table structure recognition based on robust block segmentation". In Proceedings of IS&T/SPIE’s 10th Annual Symposium
+   Electronic Imaging ’98: Science & Technology -Document Recognition V, San Jose, California, USA, 24-30 January 1998
+3.    
 
 
