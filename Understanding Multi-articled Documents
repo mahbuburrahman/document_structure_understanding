@@ -1,1 +1,28 @@
+Title: Understanding Multi-articled Documents
+
+Authors: Shuichi Tsujimoto, and Haruo Asada
+
+Cite: 
+ST: Shuichi Tsujimoto, and Haruo Asada. "Understanding multi-articled documents." Pattern Recognition, 1990. Proceedings., 
+10th International Conference on. Vol. 1. IEEE, 1990.
+
+
+Few sentences:
+A document has an obvious hierarchical geometric structure in its layout, represented by a tree, while the logical structure of a 
+document is also represented by a tree. According to them document understanding is the transformation of a geometric structure tree into 
+a logical structure tree.
+
+Logical structure is representing the configuration of articles and their components, indicates the order in which the document is to
+be read.
+
+Their experiments are on printed documents. 
+
+Summery:
+
+
+Knowledge from this paper:
+
+
+Connected papers: 
+1. 
 
